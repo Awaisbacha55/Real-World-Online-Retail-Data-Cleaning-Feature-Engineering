@@ -1,0 +1,13 @@
+Metric,Before Cleaning,After Cleaning,Change
+Total Records,541909.0,534129.0,-7780
+Exact Duplicate Rows,5268.0,0.0,-5268
+Missing Description,1454.0,0.0,-1454
+Missing / Unknown CustomerID,135080.0,132565.0,Preserved as 'Unknown'
+Zero / Negative UnitPrice,2517.0,0.0,-2517
+Negative Quantities (Returns/Cancellations),10624.0,9251.0,-1373
+Cancellation Invoices ('C'),9288.0,9251.0,-37
+Quantity: Mean,9.55,9.92,0.36
+Quantity: Median,3.0,3.0,0.0
+UnitPrice: Mean (£),4.61,4.7,0.08
+UnitPrice: Median (£),2.08,2.1,0.02
+UnitPrice: Min (£),-11062.06,0.0,Removed negative prices

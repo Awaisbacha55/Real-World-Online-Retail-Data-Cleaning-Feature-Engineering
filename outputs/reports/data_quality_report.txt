@@ -1,0 +1,154 @@
+
+======================================================================
+  1. BASIC DATASET INFORMATION
+======================================================================
+Rows           : 541,909
+Columns        : 8
+Memory usage   : 126.18 MB
+Column names   : InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
+
+Data types:
+  InvoiceNo            object
+  StockCode            object
+  Description          object
+  Quantity             int64
+  InvoiceDate          datetime64[us]
+  UnitPrice            float64
+  CustomerID           float64
+  Country              str
+
+======================================================================
+  2. MISSING VALUE ANALYSIS
+======================================================================
+     Column  MissingCount  MissingPercent  TotalRows
+ CustomerID        135080           24.93     541909
+Description          1454            0.27     541909
+
+======================================================================
+  3. DUPLICATE ANALYSIS
+======================================================================
+Duplicate rows : 5,268
+Percentage     : 0.97%
+
+Sample duplicate rows:
+InvoiceNo StockCode                      Description  Quantity         InvoiceDate  UnitPrice  CustomerID        Country
+   536409     22111     SCOTTIE DOG HOT WATER BOTTLE         1 2010-12-01 11:45:00       4.95     17908.0 United Kingdom
+   536409     22866    HAND WARMER SCOTTY DOG DESIGN         1 2010-12-01 11:45:00       2.10     17908.0 United Kingdom
+   536409     21866      UNION JACK FLAG LUGGAGE TAG         1 2010-12-01 11:45:00       1.25     17908.0 United Kingdom
+   536409     21866      UNION JACK FLAG LUGGAGE TAG         1 2010-12-01 11:45:00       1.25     17908.0 United Kingdom
+   536409     22900  SET 2 TEA TOWELS I LOVE LONDON          1 2010-12-01 11:45:00       2.95     17908.0 United Kingdom
+
+======================================================================
+  4. UNIQUE VALUE COUNTS
+======================================================================
+  InvoiceNo            25,900
+  StockCode            4,070
+  Description          4,223
+  Quantity             722
+  InvoiceDate          23,260
+  UnitPrice            1,630
+  CustomerID           4,372
+  Country              38
+
+======================================================================
+  5. DATE RANGE ANALYSIS
+======================================================================
+Min date       : 2010-12-01 08:26:00
+Max date       : 2011-12-09 12:50:00
+Span (days)    : 373
+
+======================================================================
+  6. NEGATIVE QUANTITY ANALYSIS
+======================================================================
+Count          : 10,624
+Percentage     : 1.96%
+
+Sample rows with negative quantity:
+InvoiceNo StockCode                      Description  Quantity         InvoiceDate  UnitPrice  CustomerID        Country
+  C536379         D                         Discount        -1 2010-12-01 09:41:00      27.50     14527.0 United Kingdom
+  C536383    35004C  SET OF 3 COLOURED  FLYING DUCKS        -1 2010-12-01 09:49:00       4.65     15311.0 United Kingdom
+  C536391     22556   PLASTERS IN TIN CIRCUS PARADE        -12 2010-12-01 10:24:00       1.65     17548.0 United Kingdom
+  C536391     21984 PACK OF 12 PINK PAISLEY TISSUES        -24 2010-12-01 10:24:00       0.29     17548.0 United Kingdom
+  C536391     21983 PACK OF 12 BLUE PAISLEY TISSUES        -24 2010-12-01 10:24:00       0.29     17548.0 United Kingdom
+
+======================================================================
+  7. ZERO / NEGATIVE PRICE ANALYSIS
+======================================================================
+Zero prices    : 2,515  (0.46%)
+Negative prices: 2  (0.0%)
+
+Sample rows with zero price:
+InvoiceNo StockCode Description  Quantity         InvoiceDate  UnitPrice  CustomerID        Country
+   536414     22139         NaN        56 2010-12-01 11:52:00        0.0         NaN United Kingdom
+   536545     21134         NaN         1 2010-12-01 14:32:00        0.0         NaN United Kingdom
+   536546     22145         NaN         1 2010-12-01 14:33:00        0.0         NaN United Kingdom
+   536547     37509         NaN         1 2010-12-01 14:33:00        0.0         NaN United Kingdom
+   536549    85226A         NaN         1 2010-12-01 14:34:00        0.0         NaN United Kingdom
+
+Sample rows with negative price:
+InvoiceNo StockCode     Description  Quantity         InvoiceDate  UnitPrice  CustomerID        Country
+  A563186         B Adjust bad debt         1 2011-08-12 14:51:00  -11062.06         NaN United Kingdom
+  A563187         B Adjust bad debt         1 2011-08-12 14:52:00  -11062.06         NaN United Kingdom
+
+======================================================================
+  8. CANCELLATION ANALYSIS
+======================================================================
+Cancellations  : 9,288
+Percentage     : 1.71%
+
+Sample cancellation rows:
+InvoiceNo StockCode                      Description  Quantity         InvoiceDate  UnitPrice  CustomerID        Country
+  C536379         D                         Discount        -1 2010-12-01 09:41:00      27.50     14527.0 United Kingdom
+  C536383    35004C  SET OF 3 COLOURED  FLYING DUCKS        -1 2010-12-01 09:49:00       4.65     15311.0 United Kingdom
+  C536391     22556   PLASTERS IN TIN CIRCUS PARADE        -12 2010-12-01 10:24:00       1.65     17548.0 United Kingdom
+  C536391     21984 PACK OF 12 PINK PAISLEY TISSUES        -24 2010-12-01 10:24:00       0.29     17548.0 United Kingdom
+  C536391     21983 PACK OF 12 BLUE PAISLEY TISSUES        -24 2010-12-01 10:24:00       0.29     17548.0 United Kingdom
+
+======================================================================
+  9. COUNTRY DISTRIBUTION
+======================================================================
+Number of countries: 38
+
+Country
+United Kingdom          495478
+Germany                   9495
+France                    8557
+EIRE                      8196
+Spain                     2533
+Netherlands               2371
+Belgium                   2069
+Switzerland               2002
+Portugal                  1519
+Australia                 1259
+Norway                    1086
+Italy                      803
+Channel Islands            758
+Finland                    695
+Cyprus                     622
+Sweden                     462
+Unspecified                446
+Austria                    401
+Denmark                    389
+Japan                      358
+Poland                     341
+Israel                     297
+USA                        291
+Hong Kong                  288
+Singapore                  229
+Iceland                    182
+Canada                     151
+Greece                     146
+Malta                      127
+United Arab Emirates        68
+European Community          61
+RSA                         58
+Lebanon                     45
+Lithuania                   35
+Brazil                      32
+Czech Republic              30
+Bahrain                     19
+Saudi Arabia                10
+
+======================================================================
+  END OF DATA QUALITY REPORT
+======================================================================
